@@ -5,9 +5,16 @@ void cleanup(va_list args, buffer_t *output);
 int run_printf(const char *format, va_list args, buffer_t *output);
 
 /**
+<<<<<<< HEAD
  * _printf - Outputs formatted string.
  * @format: Character string to print - could contain directives.
  * Return: Number of characters printed.
+=======
+ * _printf - Outputs a formatted string and create file.
+ * 
+ *
+ * 
+>>>>>>> d1f48d5da0eb24f8ccafbdbe67e70f177ef878dc
  */
 
 int _printf(const char *format, ...)
