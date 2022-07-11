@@ -39,5 +39,25 @@ return (n);
 void free_buffer(buffer_t *output)
 {
 free(output->start);
-free(output);  
+free(output);
+}
+
+/**
+ * init_buffer - Initialise variable of struct type buffer_t.
+ * Return: Pointer to initialised buffer_t.
+ */
+
+buffer_t *init_buffer(void)
+{
+buffer_t *output;
+output = malloc(sizeof(buffer_t));
+if (output == NULL)
+return (NULL);
+{
+free(output);
+return (NULL);
+}
+output->start = output->buffer;
+output->len = 0;
+return (output);
 }
