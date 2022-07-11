@@ -5,7 +5,7 @@ void cleanup(va_list args, buffer_t *output);
 int run_printf(const char *format, va_list args, buffer_t *output);
 
 /**
- * _printf - Outputs a formatted string.
+ * _printf - Outputs a formatted string and create file.
  * 
  *
  * 
